@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    /* padding: 1%; */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+img{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;   
+    padding-top: 5%; 
+}
+
+li{
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.searchicon{
+    padding-right: 20px;
+}
+.searchicon:hover{
+    cursor: pointer;
+}
+
+.phone .fa{
+    padding-right: 10px;
+}
+
+.email .fa{
+    padding-right: 10px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    margin-bottom: 5px;
+    color: red;
+    font-weight: 800;
+    
+}
+
+.info{
+    padding-left: 30px;
+}
+.fa{
+    color: firebrick;
+}
+
+
+.location{
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+}
+
+.location span{
+    padding-left: 10px;
+}
+
+/* Style the dropdown button */
+.menu-button {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+
+/* Style the dropdown list */
+
+.menu.active li {
+    margin: 5px 0;
+}
+
+.searchicon{
+    padding-top: 7%;
+    /* align-items: center;
+    justify-items: center; */
+
+}
+
+@media (max-width: 920px) {
+
+    /* Show the dropdown button on small screens */
+    .menu-button {
+      display: block;
+    }
+  
+    /* Hide the info section on small screens */
+    .info {
+      display: none;
+    }
+  
+    /* Display the menu as a dropdown when the button is clicked */
+    .menu.active {
+        width: 30%;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        list-style: none;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+    
+
+    .menu{
+        display: none;
+    }
+
+    .searchicon{
+        padding-top: 30px;
+
+
+    }
+  }
+
+  /* Add this CSS to your component's CSS file */
+  .search-container {
+    display: none; /* Initially hidden */
+    align-items: center;
+    padding-top: 6%;
+
+  }
+  
+  .search-container.active {
+    display: flex; /* Show when active */
+  }
+  
+  .search-container input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #333; /* Add an underline */
+    outline: none;
+  }
+  
+  /* Add a style to the active search icon */
+  .searchicon.active i {
+    color: #333; /* Change icon color when active */
+  }
