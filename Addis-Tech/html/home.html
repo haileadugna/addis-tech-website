@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addis Tech</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <div class="location">
+        <i class="fa fa-map-marker"></i>
+        <span>Dire Dawa, Ethiopia</span>
+    </div>
+    <div class="body">
+        <div class="logo">
+            <img src="/Addis-Tech/assets/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <div class="searchicon" onclick="toggleSearch()">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul class="menu">
+                <li><a href="/Addis-Tech/html/home.html">Home</a></li>
+                <li><a href="/Addis-Tech/html/aboutus.html">AboutUs</a></li>
+                <li><a href="/Addis-Tech/html/service.html">Service</a></li>
+                <li><a href="/Addis-Tech/html/contact.html">Contact</a></li>
+                <li><a href="/Addis-Tech/html/blog.html">Blog</a></li>
+            </ul>
+            <div class="info">
+                <p>For Info</p>
+                <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    <span>+251 911 11 11 11</span>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <span>addis.tech@addis.com</span>
+                </div>
+            </div>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <div class="home">
+        <div class="home-content">
+            <div class="home-content-quote">
+                <p class="animated-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <button class="readmore">
+                    <a href="/Addis-Tech/html/aboutus.html" id="contactus">Contact Us</a>
+                    <a href="/Addis-Tech/html/aboutus.html">Explore More</a>
+                </button>
+            </div>
+            <button class="scroll-button left-button" type="button" onclick="scrollLeft()">⬅</button>
+            <button class="scroll-button right-button" type="button" onclick="scrollRight()">➡</button>
+
+            <div class="home-content-img">
+                <img src="/Addis-Tech/assets/camera1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

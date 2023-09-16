@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/background.jpg");
+}
+
+
+/* Style for the container holding the content and image */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 700px;
+    overflow: hidden;
+    /* padding: 20px; */
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative; /* Create a relative positioning context */
+  }
+  
+  /* Style for the left scroll button */
+  .left-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: blue 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .left-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the right scroll button */
+  .right-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: blue 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .right-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the content on the left side */
+  .home-content-quote {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Style for the paragraph text with animation */
+  .home-content-quote .animated-text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    color: #333;
+    animation: scrollText 5s linear infinite alternate;
+  }
+  
+  /* Rest of your existing styles... */
+  
+  /* Keyframes for text animation (same as before) */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-10%);
+    }
+  }
+  
+.home-content-img img{
+    height: 700px;
+    /* width: 100%; */
+    object-fit: cover;
+    margin-right: 0;
+    overflow: hidden;
+}
+  
+.readmore{
+    position:absolute;
+    bottom: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    
+    border: none;
+}
+
+.readmore a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1670b;
+
+}
+
+#contactus{
+    background-color: #1c37d3;
+}
