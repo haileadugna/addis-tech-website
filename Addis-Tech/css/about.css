@@ -114,3 +114,13 @@ body{
       width: 100%;
     }
   }
+
+  #map {
+    height: 400px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+}
+
+.location{
+    width: 100%;
+    /* background-color: #333; */
+}

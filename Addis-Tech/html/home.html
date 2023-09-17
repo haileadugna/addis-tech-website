@@ -6,8 +6,12 @@
     <title>Addis Tech</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <script src="../js/home.js"></script>
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/homeabout.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
     <div class="location">
@@ -16,8 +20,8 @@
     </div>
     <div class="body">
         <div class="logo">
-            <img src="/Addis-Tech/assets/logo.png" alt="">
-        </div>
+            <a href="./home.html"><img src="../assets/logo.png" alt="" style="width: 100px; border-radius: 100%;">
+            </a>        </div>
         <div class="nav">
             <div class="searchicon" onclick="toggleSearch()">
                 <i class="fa fa-search"></i>
@@ -51,18 +55,98 @@
         <div class="home-content">
             <div class="home-content-quote">
                 <p class="animated-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                <button class="readmore">
+                <button class="contactus">
                     <a href="/Addis-Tech/html/aboutus.html" id="contactus">Contact Us</a>
-                    <a href="/Addis-Tech/html/aboutus.html">Explore More</a>
+                </button>
+                <button class="explore">
+                    <a href="/Addis-Tech/html/aboutus.html" class="explore">Explore More</a>
                 </button>
             </div>
             <button class="scroll-button left-button" type="button" onclick="scrollLeft()">⬅</button>
             <button class="scroll-button right-button" type="button" onclick="scrollRight()">➡</button>
 
             <div class="home-content-img">
-                <img src="/Addis-Tech/assets/camera1.jpg" alt="">
+                <img src="/Addis-Tech/assets/camera1.jpg" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="aboutus">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>
+                    At Addis Tech Security Camera Store, we are your trusted partner in safeguarding what matters most. With a passion for security and a commitment to excellence, we provide cutting-edge security camera solutions to homes, businesses, and institutions throughout Ethiopia.
+                </p>
+                <p>
+                    Our mission is simple: to offer top-tier security technology that empowers you to protect your assets, loved ones, and peace of mind. We understand that security is a fundamental aspect of modern life, and we're dedicated to making it accessible and reliable.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="/Addis-Tech/assets/logo.png" alt="" style="width: 100%;">
             </div>
         </div>
     </div>
 </body>
+
+<footer>
+
+    <div class="companylogo">
+        <a href="./home.html"><img src="../assets/logo.png" alt="" style="width: 100px; border-radius: 100%;">
+        </a>
+    </div>
+    <hr>
+    <div class="container">
+
+        
+        <div class="reachus">
+            <h3>Reach Us</h3>
+            <div class="phonenumber">
+                <div class="phonee">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div>
+                    <p>+1 123 456 7890</p>
+                    <p>+1 123 456 7890</p>
+                </div>
+            </div>
+            <p> 
+                <div class="fa fa-envelope"> </div> example@example.com</p>
+            <p><div class="fa fa-location"></div> 1234 Street Name, Dire Dawa, United States</p>
+            
+        </div>
+        <div class="social">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-x"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="joinourpremium">
+            <h3>Join Our NewsLetter</h3>
+            <p>Get access to all our resources</p>
+            <div class="btns">
+                <input type="email" placeholder="Enter your email">
+                <span><button class="btn btn-primary">Join Now</button></span>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>© 2023 </p>
+        </div>
+        <div class="legal">
+            <ul>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </html>

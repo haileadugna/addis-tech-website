@@ -3,15 +3,19 @@
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
    
     padding-left: 10%;
     padding-right: 10%;
     background-image: url("../assets/backgroundhead.jpg");
-    height: 100px;
+    height: 150px;
     
 
+}
+
+.logo{
+    padding-top: 2%;
 }
 
 .logo img{
@@ -19,6 +23,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 50%;
+    
 }
 
 ul{
@@ -113,10 +118,9 @@ a:active{
 
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1020px) {
 
     .body{
-        height: 150px;
         text-align: center;
     }
     /* Show the dropdown button on small screens */
@@ -161,7 +165,7 @@ a:active{
   .search-container {
     display: none; /* Initially hidden */
     align-items: center;
-    padding-top: 6%;
+    padding-top: 7%;
 
   }
   

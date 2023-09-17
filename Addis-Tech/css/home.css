@@ -4,7 +4,6 @@ body{
     background-image: url("../assets/background.jpg");
 }
 
-
 /* Style for the container holding the content and image */
 .home-content {
     display: flex;
@@ -12,109 +11,112 @@ body{
     justify-content: space-between;
     height: 700px;
     overflow: hidden;
-    /* padding: 20px; */
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    position: relative; /* Create a relative positioning context */
-  }
-  
-  /* Style for the left scroll button */
-  .left-button {
-    background-color: #007BFF;
+    position: relative;
+}
+
+/* Style for the left scroll button */
+.left-button,
+.right-button {
+    background-color: black;
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: blue 0.3s ease;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.left-button:hover,
+.right-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-50%) scale(1.1); /* Add scaling effect on hover */
+}
+
+.left-button {
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .left-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Style for the right scroll button */
-  .right-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: blue 0.3s ease;
-    position: absolute;
+}
+
+.right-button {
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .right-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Style for the content on the left side */
-  .home-content-quote {
+}
+
+/* Style for the content on the left side */
+.home-content-quote {
     flex: 1;
     padding: 10px;
     text-align: left;
     position: relative;
-  }
-  
-  /* Style for the paragraph text with animation */
-  .home-content-quote .animated-text {
+}
+
+/* Style for the paragraph text with animation */
+.home-content-quote .animated-text {
     font-size: 16px;
     line-height: 1.4;
     margin-bottom: 10px;
     margin-left: 20%;
     color: #333;
     animation: scrollText 5s linear infinite alternate;
-  }
-  
-  /* Rest of your existing styles... */
-  
-  /* Keyframes for text animation (same as before) */
-  @keyframes scrollText {
+}
+
+.scroll-button .left-button{
+    background-color: none;
+}
+
+/* Keyframes for text animation (same as before) */
+@keyframes scrollText {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     100% {
-      transform: translateX(-10%);
+        transform: translateX(-10%);
     }
-  }
-  
-.home-content-img img{
-    height: 700px;
-    /* width: 100%; */
-    object-fit: cover;
-    margin-right: 0;
-    overflow: hidden;
-}
-  
-.readmore{
-    position:absolute;
-    bottom: -70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    
-    border: none;
 }
 
-.readmore a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+.contactus{
     padding: 10px 20px;
+    background-color:#1c37d3;
     border-radius: 5px;
-    background-color: #f1670b;
+    margin-left: 25%;
+    margin-top: 5%;
 
 }
 
-#contactus{
-    background-color: #1c37d3;
+.contactus a{
+    color: white;
+    font-weight: bold;
 }
+
+.explore{
+    padding: 10px 10px;
+    background-color: #f1670b;;
+    border-radius: 5px;
+    /* margin-left: 20%; */
+
+}
+
+.explore a{
+    color: white;
+    font-weight: bold;
+}
+
+/* Style for the image container */
+.home-content-img {
+    max-width: 50%; /* Adjust the max-width to make the image smaller */
+    margin: 0 auto; /* Center-align the image */
+    transition: transform 0.3s ease; /* Add a smooth transition to the image */
+}
+
+/* Style for the image inside the container */
+.home-content-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
