@@ -1,8 +1,6 @@
 let menuActive = false;
 let searchActive = false;
 let isInputFocused = false;
-let scrollPosition = 0;
-let contentItemWidth; // Initialize contentItemWidth variable
 
 // Function to toggle the menu
 function toggleMenu() {
@@ -74,93 +72,123 @@ if (searchInput) {
   searchInput.addEventListener('blur', onBlur);
 }
 
+// ############################
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Your existing code for toggling functions and variables
+  let menuActive = false;
+let searchActive = false;
+let isInputFocused = false;
+
+// Function to toggle the menu
+function toggleMenu() {
+  menuActive = !menuActive;
+  updateMenuVisibility();
+}
+
+// Function to toggle the search input
+function toggleSearch() {
+  searchActive = !searchActive;
+  // If the input is active, keep it active
+  if (searchActive) {
+    isInputFocused = true;
+  }
+  updateSearchVisibility();
+}
+  // Attach event listeners to elements
+  const menuButton = document.querySelector('.menu-button');
+  if (menuButton) {
+    menuButton.addEventListener('click', toggleMenu);
+  }
+
+  const searchIcon = document.querySelector('.searchicon i');
+  if (searchIcon) {
+    searchIcon.addEventListener('click', toggleSearch);
+  }
+
+  const searchInput = document.querySelector('.searchicon input[type="text"]');
+  if (searchInput) {
+    searchInput.addEventListener('focus', onFocus);
+    searchInput.addEventListener('blur', onBlur);
+  }
+
+  
+});
+
+
+// Path: Addis-Tech/js/home.js
+// document.addEventListener("DOMContentLoaded", function () {
 const contentItems = [
   {
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum 1.",
-    link: "/Addis-Tech/html/aboutus.html",
+    text: "Eyes everywhere, safety everywhere.",
     image: "/Addis-Tech/assets/camera1.jpg" // Image URL for the first item
   },
   {
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum 2.",
-    link: "/Addis-Tech/html/aboutus.html",
+    text: "See the unseen, secure your world.",
     image: "/Addis-Tech/assets/camera2.jpg" // Image URL for the second item
   },
   {
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum 3.",
-    link: "/Addis-Tech/html/aboutus.html",
+    text: "Cameras on guard, 24/7.",
     image: "/Addis-Tech/assets/camera3.jpg" // Image URL for the third item
   },
-  // Add more content items as needed
+  {
+    text: "Peace through surveillance.",
+    image: "/Addis-Tech/assets/camera3.jpg" // Image URL for the third item
+  },
+  {
+    text: "Keep an eye on what matters",
+    image: "/Addis-Tech/assets/camera4.jpg" // Image URL for the third item
+  },
+  {
+    text: "Security at a glance.",
+    image: "/Addis-Tech/assets/camera5.jpg" // Image URL for the third item
+  },
+  {
+    text: "Watchful lenses, peaceful minds.",
+    image: "/Addis-Tech/assets/camera6.jpg" // Image URL for the third item
+  },
+  
 ];
 
-// Function to update the content displayed in the container
+
+var image = document.querySelector(".content-image");
+var text = document.querySelector(".animated-text")
+var scrollPosition = 0;
+
 function updateContent() {
-    const currentIndex = Math.min(Math.floor(scrollPosition / contentItemWidth), contentItems.length - 1);
-    const currentContent = contentItems[currentIndex];
-  // Update the content of the "animated-text" element, the links in the button,
-  // and the image source
-  const animatedText = document.querySelector('.animated-text');
-  const contactUsLink = document.querySelector('#contactus');
-  const exploreMoreLink = document.querySelector('.readmore a:nth-child(2)');
-  const contentImage = document.querySelector('.home-content-img img');
+  const currentContent = contentItems[scrollPosition];
+  console.log(currentContent);
+  image.setAttribute("src", currentContent.image);
+  text.textContent = currentContent.text
 
-  animatedText.textContent = currentContent.text;
-  contactUsLink.href = currentContent.link;
-  exploreMoreLink.href = currentContent.link;
-  contentImage.src = currentContent.image; // Update the image source
 }
 
-// Get references to the left and right buttons
-const leftButton = document.querySelector('.left-button');
-const rightButton = document.querySelector('.right-button');
+var leftButton = document.querySelector(".left-button");
+var rightButton = document.querySelector(".right-button")
 
-// Function to update the scroll position of the content container
-function updateScrollPosition() {
-  const contentContainer = document.querySelector('.home-content');
-  if (contentContainer) {
-    contentContainer.style.transform = `translateX(-${scrollPosition}px)`;
-  }
-}
-
-// Function to scroll left
 function scrollLeft() {
-    console.log('Scrolling left');
-    const contentContainer = document.querySelector('.home-content');
-    const contentItemWidth = contentContainer.offsetWidth;
-    
-    if (scrollPosition > 0) {
-      scrollPosition -= contentItemWidth;
-      if (scrollPosition < 0) {
-        scrollPosition = 0;
-      }
-      updateScrollPosition();
-    }
+  if (scrollPosition <= 0) {
+    scrollPosition = contentItems.length - 1;
+  } else {
+    scrollPosition--;
   }
-  
-  // Function to scroll right
-  function scrollRight() {
-    console.log('Scrolling right');
-    const contentContainer = document.querySelector('.home-content');
-    const contentItemWidth = contentContainer.offsetWidth;
-    const maxScroll = contentContainer.scrollWidth - contentContainer.clientWidth;
-  
-    if (scrollPosition < maxScroll) {
-      scrollPosition += contentItemWidth;
-      if (scrollPosition > maxScroll) {
-        scrollPosition = maxScroll;
-      }
-      updateScrollPosition();
-    }
-  }
-  
-// Add click event listeners to the left and right buttons
-if (leftButton) {
-  leftButton.addEventListener('click', scrollLeft);
+  console.log('Scrolling left', scrollPosition);
+  updateContent();
 }
 
-if (rightButton) {
-  rightButton.addEventListener('click', scrollRight);
+
+function scrollRight(){
+  if (scrollPosition >= contentItems.length -1){
+    scrollPosition = 0;
+  }
+  else{
+    scrollPosition++;
+  }
+  updateContent();
 }
 
-// Initialize the content when the page loads
-updateContent();
+  
+leftButton.addEventListener("click", scrollLeft);
+rightButton.addEventListener("click", scrollRight)
+
+// });

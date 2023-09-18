@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <script src="../js/home.js"></script>
+    <!-- <script src="../js/home.js"></script> -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/homeabout.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -24,13 +24,15 @@
             </a>        </div>
         <div class="nav">
             <div class="searchicon" onclick="toggleSearch()">
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search">
+                    
+                    <input type="text" placeholder="Search...">
+                </i>
+                
             </div>
-            <div class="search-container">
-                <input type="text" placeholder="Search...">
-            </div>
+            
             <ul class="menu">
-                <li><a href="/Addis-Tech/html/home.html">Home</a></li>
+                <li><a href="/Addis-Tech/html/index.html">Home</a></li>
                 <li><a href="/Addis-Tech/html/aboutus.html">AboutUs</a></li>
                 <li><a href="/Addis-Tech/html/service.html">Service</a></li>
                 <li><a href="/Addis-Tech/html/contact.html">Contact</a></li>
@@ -48,13 +50,13 @@
                 </div>
             </div>
         </div>
-        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <button class="menu-button" >☰</button>
     </div>
 
     <div class="home">
         <div class="home-content">
             <div class="home-content-quote">
-                <p class="animated-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <p class="animated-text">Eyes everywhere, safety everywhere.</p>
                 <button class="contactus">
                     <a href="/Addis-Tech/html/aboutus.html" id="contactus">Contact Us</a>
                 </button>
@@ -66,7 +68,7 @@
             <button class="scroll-button right-button" type="button" onclick="scrollRight()">➡</button>
 
             <div class="home-content-img">
-                <img src="/Addis-Tech/assets/camera1.jpg" alt="" style="width: 100%;">
+                <img src="/Addis-Tech/assets/camera1.jpg" alt="" style="width: 100%;" class="content-image">
             </div>
         </div>
     </div>
@@ -87,12 +89,32 @@
             </div>
         </div>
     </div>
+
+    <div class="ourgallery">
+        <h1>
+            Our Gallery
+
+        </h1>
+
+        <div class="gallery">
+            <a><img src="../assets/camera7.jpg" alt=""></a>
+            <a><img src="../assets/camera1.jpg" alt=""></a>
+            <a><img src="../assets/camera5.jpg" alt=""></a>
+            <a><img src="../assets/camera6.jpg" alt=""></a>
+            <a><img src="../assets/camera8.jpg" alt=""></a>
+            <a><img src="../assets/camera9.jpg" alt=""></a>
+            <a><img src="../assets/camera10.jpg" alt=""></a>
+            <a><img src="../assets/camera11.jpg" alt=""></a>
+            
+        </div>
+    </div>
+    <script src="../js/home.js"></script>
 </body>
 
 <footer>
 
     <div class="companylogo">
-        <a href="./home.html"><img src="../assets/logo.png" alt="" style="width: 100px; border-radius: 100%;">
+        <a href="./index.html"><img src="../assets/logo.png" alt="" style="width: 100px; border-radius: 100%;">
         </a>
     </div>
     <hr>

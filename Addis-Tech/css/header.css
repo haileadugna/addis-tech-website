@@ -161,26 +161,12 @@ a:active{
 
   }
 
-  /* Add this CSS to your component's CSS file */
-  .search-container {
-    display: none; /* Initially hidden */
-    align-items: center;
-    padding-top: 7%;
 
-  }
   
-  .search-container.active {
-    display: flex; /* Show when active */
-  }
-  
-  .search-container input {
+  .searchicon input {
     padding: 5px;
     border-radius: 10px;
     border: 2px solid #333; /* Add an underline */
     outline: none;
-  }
-  
-  /* Add a style to the active search icon */
-  .searchicon.active i {
-    color: #333; /* Change icon color when active */
+    /* display: none; */
   }
