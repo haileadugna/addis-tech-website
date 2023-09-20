@@ -8,7 +8,7 @@
    
     padding-left: 10%;
     padding-right: 10%;
-    background-image: url("../assets/backgroundhead.jpg");
+    background-image: url("../assets/background2.jpg");
     height: 150px;
     
 
@@ -41,7 +41,7 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover{
@@ -118,6 +118,18 @@ a:active{
 
 }
 
+.location span{
+    color: #000;
+}
+
+span{
+    color: white;
+}
+
+h3{
+    color: blue;
+}
+
 @media (max-width: 1020px) {
 
     .body{
@@ -138,7 +150,7 @@ a:active{
         width: 30%;
         display: block;
         position: absolute;
-        background-color: #fff;
+        background-image: url("../assets/background2.jpg");
         list-style: none;
         padding: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);

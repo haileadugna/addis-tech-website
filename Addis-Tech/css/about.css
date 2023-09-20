@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("../assets/background.jpg");
+    /* background-image: url("../assets/background.jpg"); */
 }
 
 /* Style for the About Us section */
 .about {
-  padding: 5% 10px;
+
+  padding: 0;
 }
 
 .aboutus {
@@ -40,7 +41,7 @@ body{
 
 .about-text h1 {
   font-size: 28px;
-  color: #333;
+  color: blue;
   margin-bottom: 20px;
 }
 
@@ -59,18 +60,31 @@ body{
   }
  
   
-  h1 {
-    font-size: 50px;
+  h3 {
+    /* font-size: 50px; */
     word-break: break-all;
+    color: blue;
   }
-  
+
   .row {
-    /* margin: 8px -16px; */
-    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
     z-index: 6;
     opacity: 1;
     transition: all 0.75s ease;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  }
+  
+  .column {
+    margin: 10px;
+    padding: 10px;
+    z-index: 6;
+    opacity: 1;
+    transition: all 0.75s ease;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    float: left;
+    width: 30%;
     
   }
   
@@ -79,13 +93,7 @@ body{
   .row > .column {
     padding: 8px;
   }
-  
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-  }
-  
+
   /* Clear floats after rows */ 
   .row:after {
     content: "";
