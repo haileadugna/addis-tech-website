@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../css/header.css">
+    <title>Service</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
     <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
+<div class="location">
+    <i class="fa fa-map-marker"></i>
+    <span>Dire Dawa, Ethiopia</span>
+</div>
+
 <body>
-    <div class="location">
-        <i class="fa fa-map-marker"></i>
-        <span>Dire Dawa, Ethiopia</span>
-    </div>
     <div class="body">
         <div class="logo">
-            <img src="/Addis-Tech/assets/logo.png" alt="">
-        </div>
+            <a href="./home.html"><img src="../assets/logo.png" alt="" style="width: 100px; border-radius: 100%;">
+            </a>        </div>
         <div class="nav">
             <div class="searchicon" onclick="toggleSearch()">
                 <i class="fa fa-search">
@@ -30,11 +31,11 @@
                 
             </div>
             <ul class="menu">
-                <li><a href="/Addis-Tech/html/index.html">Home</a></li>
-                <li><a href="/Addis-Tech/html/aboutus.html">AboutUs</a></li>
-                <li><a href="/Addis-Tech/html/service.html">Gallery</a></li>
-                <li><a href="/Addis-Tech/html/contact.html">Contact</a></li>
-                <li><a href="/Addis-Tech/html/blog.html">Blog</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">AboutUs</a></li>
+                <li><a href="/service.html">Gallery</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/blog.html">Blog</a></li>
             </ul>
             <div class="info">
                 <p>For Info</p>
@@ -50,34 +51,21 @@
         </div>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </div>
+    
+    <div class="bodybox">
 
-    <div class="contact-container">
-        <div class="contact-header">
-            <h1>Contact Us</h1>
+        <div class="box">
+            <span style="--i:1;"> <img src="/assets/camera2.jpg" alt=""></span>
+            <span style="--i:2;"> <img src="/assets/camera3.jpg" alt=""></span>
+            <span style="--i:3;"> <img src="/assets/camera4.jpg" alt=""></span>
+            <span style="--i:4;"> <img src="/assets/camera2.jpg" alt=""></span>
+            <span style="--i:5;"> <img src="/assets/camera1.jpg" alt=""></span>
+            <span style="--i:6;"> <img src="/assets/camera9.jpg" alt=""></span>
+            <span style="--i:7;"> <img src="/assets/camera8.jpg" alt=""></span>
+            <span style="--i:8;"> <img src="/assets/camera7.jpg" alt=""></span>
+            <span style="--i:9;"> <img src="/assets/camera6.jpg" alt=""></span>
         </div>
-        <main class="contact-main">
-            <section class="contact-info">
-                <div class="contact-section">
-                    <h2>Our Location</h2>
-                    <address>
-                        123 Main Street<br>
-                        City, Country<br>
-                        Postal Code
-                    </address>
-                </div>
-                <div class="contact-section">
-                    <h2>Contact Details</h2>
-                    <ul>
-                        <li>Email: contact@example.com</li>
-                        <li>Phone: +251-984567890</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="contact-map">
-                <h2>Find Us on the Map</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31471.092048128456!2d41.835038861760324!3d9.605040140780694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x163101db1195c6e7%3A0x10209694f03469cc!2sDire%20Dawa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1694863606084!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </main>
+
     </div>
 </body>
 

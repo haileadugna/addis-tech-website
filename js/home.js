@@ -121,31 +121,31 @@ function toggleSearch() {
 const contentItems = [
   {
     text: "Eyes everywhere, safety everywhere.",
-    image: "/Addis-Tech/assets/camera1.jpg" // Image URL for the first item
+    image: "/assets/camera1.jpg" // Image URL for the first item
   },
   {
     text: "See the unseen, secure your world.",
-    image: "/Addis-Tech/assets/camera2.jpg" // Image URL for the second item
+    image: "/assets/camera2.jpg" // Image URL for the second item
   },
   {
     text: "Cameras on guard, 24/7.",
-    image: "/Addis-Tech/assets/camera3.jpg" // Image URL for the third item
+    image: "/assets/camera3.jpg" // Image URL for the third item
   },
   {
     text: "Peace through surveillance.",
-    image: "/Addis-Tech/assets/camera3.jpg" // Image URL for the third item
+    image: "/assets/camera3.jpg" // Image URL for the third item
   },
   {
     text: "Keep an eye on what matters",
-    image: "/Addis-Tech/assets/camera4.jpg" // Image URL for the third item
+    image: "/assets/camera4.jpg" // Image URL for the third item
   },
   {
     text: "Security at a glance.",
-    image: "/Addis-Tech/assets/camera5.jpg" // Image URL for the third item
+    image: "/assets/camera5.jpg" // Image URL for the third item
   },
   {
     text: "Watchful lenses, peaceful minds.",
-    image: "/Addis-Tech/assets/camera6.jpg" // Image URL for the third item
+    image: "/assets/camera6.jpg" // Image URL for the third item
   },
   
 ];

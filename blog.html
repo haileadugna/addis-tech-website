@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addis Tech</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- <script src="../js/home.js"></script> -->
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/homeabout.css">
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/footer.css">
+
 </head>
 <body>
     <div class="location">
@@ -30,13 +29,12 @@
                 </i>
                 
             </div>
-            
             <ul class="menu">
-                <li><a href="/Addis-Tech/html/index.html">Home</a></li>
-                <li><a href="/Addis-Tech/html/aboutus.html">AboutUs</a></li>
-                <li><a href="/Addis-Tech/html/service.html">Service</a></li>
-                <li><a href="/Addis-Tech/html/contact.html">Contact</a></li>
-                <li><a href="/Addis-Tech/html/blog.html">Blog</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">AboutUs</a></li>
+                <li><a href="/service.html">Gallery</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/blog.html">Blog</a></li>
             </ul>
             <div class="info">
                 <p>For Info</p>
@@ -50,66 +48,72 @@
                 </div>
             </div>
         </div>
-        <button class="menu-button" >☰</button>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
     </div>
 
-    <div class="home">
-        <div class="home-content">
-            <div class="home-content-quote">
-                <p class="animated-text">Eyes everywhere, safety everywhere.</p>
-                <button class="contactus">
-                    <a href="/Addis-Tech/html/aboutus.html" id="contactus">Contact Us</a>
-                </button>
-                <button class="explore">
-                    <a href="/Addis-Tech/html/aboutus.html" class="explore">Explore More</a>
-                </button>
+    <div class="blog">
+        <div class="blog-container">
+            <div class="blog-image">
+                <img src="../assets/camera1.jpg" alt="" style="width: 100%;">
             </div>
-            <button class="scroll-button left-button" type="button" onclick="scrollLeft()">⬅</button>
-            <button class="scroll-button right-button" type="button" onclick="scrollRight()">➡</button>
-
-            <div class="home-content-img">
-                <img src="/Addis-Tech/assets/camera1.jpg" alt="" style="width: 100%;" class="content-image">
-            </div>
-        </div>
-    </div>
-
-    <div class="about">
-        <div class="aboutus">
-            <div class="about-text">
-                <h1>About Us</h1>
+            <div class="blog-content">
+                <h1>Blog
+                </h1>
+                <h5>By-adim | september 6, 2023</h5>
                 <p>
-                    At Addis Tech Security Camera Store, we are your trusted partner in safeguarding what matters most. With a passion for security and a commitment to excellence, we provide cutting-edge security camera solutions to homes, businesses, and institutions throughout Ethiopia.
-                </p>
-                <p>
-                    Our mission is simple: to offer top-tier security technology that empowers you to protect your assets, loved ones, and peace of mind. We understand that security is a fundamental aspect of modern life, and we're dedicated to making it accessible and reliable.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum...
                 </p>
             </div>
-            <div class="about-image">
-                <img src="/Addis-Tech/assets/logo.png" alt="" style="width: 100%;">
+            <a href="">Readmore...</a>
+        </div>
+        <div class="blog-container">
+            <div class="blog-image">
+                <img src="../assets/camera1.jpg" alt="" style="width: 100%;">
             </div>
+            <div class="blog-content">
+                <h1>Blog
+                </h1>
+                <h5>By-adim | september 6, 2023</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum...
+                </p>
+            </div>
+            <a href="">Readmore...</a>
         </div>
+        <div class="blog-container">
+            <div class="blog-image">
+                <img src="../assets/camera1.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="blog-content">
+                <h1>Blog
+                </h1>
+                <h5>By-adim | september 6, 2023</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum...
+                </p>
+            </div>
+            <a href="">Readmore...</a>
+        </div>
+        <div class="blog-container">
+            <div class="blog-image">
+                <img src="../assets/camera1.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="blog-content">
+                <h1>Blog
+                </h1>
+                <h5>By-adim | september 6, 2023</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum...
+                </p>
+            </div>
+            <a href="">Readmore...</a>
+        </div>
+
     </div>
 
-    <div class="ourgallery">
-        <h1>
-            Our Gallery
-
-        </h1>
-
-        <div class="gallery">
-            <a><img src="../assets/camera7.jpg" alt=""></a>
-            <a><img src="../assets/camera1.jpg" alt=""></a>
-            <a><img src="../assets/camera5.jpg" alt=""></a>
-            <a><img src="../assets/camera6.jpg" alt=""></a>
-            <a><img src="../assets/camera8.jpg" alt=""></a>
-            <a><img src="../assets/camera9.jpg" alt=""></a>
-            <a><img src="../assets/camera10.jpg" alt=""></a>
-            <a><img src="../assets/camera11.jpg" alt=""></a>
-            
-        </div>
-    </div>
-    <script src="../js/home.js"></script>
 </body>
+
+
 
 <footer>
 
@@ -163,7 +167,6 @@
         <div class="col-md-12">
             <p>© 2023 | Developed by <strong>Hake</strong> </p>
         </div>
-        
     </div>
 </footer>
 </html>
